@@ -16,8 +16,8 @@ const Avatar: React.FC<AvatarProps> = ({
 }) => {
   return (
     <div className="avatar" {...props}>
-      <div className={`w-8 rounded-full border ${className}`}>
-        <img src={src} alt={alt} />
+      <div className={`rounded-full border ${className}`}>
+        <img src={src} className="object-cover w-full h-full" alt={alt} />
         {children}
       </div>
     </div>
